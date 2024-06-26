@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "User",
+    "description": "User from www.msp360.com",
+    "type": "object",
+    "properties": {
+        "users": {
+            "type": "string"
+        },
+        "mode": {
+            "type": "number"
+        }
+    },
+    "required": ["name"]
+}

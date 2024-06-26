@@ -1,0 +1,38 @@
+Task:
+1. Познакомиться немного с приложением. Зарегистрироваться  на https://www.msp360.com/managed-backup/signup/
+2. Дана сущность user:
+
+GET     /api/users
+GET     /api/users/{id}
+POST    /api/users
+PUT     /api/users/{id}
+DELETE  /api/users
+
+*   UI можно посмотреть: {host}/AP/Users/addNew
+**  Поля {name} & {password} - MUST.
+*** Юзер уникален по {name}
+
+=========================
+POST PUT body:
+{
+    "name":"user123",
+    "password":"ff",
+    "firstName":"test",
+    "lastName":"test",
+    "companyId":null,
+    "notificationEmails":[],
+    "enabled":true,
+    "userDestinations":[],
+    "licensingMode":0,
+    "licensesGranted":[]
+}
+
+DELETE:
+{
+    "users": ["cb4c9c3c-27b8-4e34-86ec-3c11f1158122"],
+    "mode": 0
+}
+=========================
+
+Написать тесты на указанные выше эндпоинты. Можно на python+pytest+requests, можно псевдокодом.
+Суть - увидеть как декомпозируете задачу, как используете тест дизайн, как будут выглядеть тесты
