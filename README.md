@@ -24,17 +24,19 @@ msp360.com/
 │  │  ├─ test_user_crud.py
 │  │  ├─ test_user_functional_positive.py
 │  │  |─ test_user_functional_negative.py
+│  │  |─ test_user_other.py
 ├─ utils/
 │  ├─ file_reader.py
 ├─ .gitignore
 ├─ config.py
 ├─ README.md
+├─ requirements.txt
 ├─ tasks.txt
 ```
 
 ## 🚀 Test Execution:
 
-- [Fork](https://github.com/...) and Clone the repository https://github.com/...
+- [Fork]([https://github.com/...](https://github.com/JarikM/msp360)) and Clone the repository ([https://github.com/JarikM/msp360])
 - Open [Pycharm](https://www.jetbrains.com/pycharm/) (or any IDE) > File > Open > Open the project where the repository is located.
 - On the `Pycharm` terminal, navigate to the `tests` directory via `cd tests`
 - On the `Pycharm` terminal, run the command: `python -m pytest -v`
